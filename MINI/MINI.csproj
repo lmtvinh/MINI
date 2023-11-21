@@ -58,6 +58,12 @@
     <Compile Include="GUI\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\trangChu.resx">
       <DependentUpon>trangChu.cs</DependentUpon>

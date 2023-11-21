@@ -30,6 +30,14 @@
         {
             this.tabNhanVien = new System.Windows.Forms.TabControl();
             this.tabDSNV = new System.Windows.Forms.TabPage();
+            this.listViewNhanVien = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.HoVaTen = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.GioiTinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DiaChi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ChucVu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TrangThai = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSua = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lable8 = new System.Windows.Forms.Label();
@@ -53,29 +61,82 @@
             this.tabNhanVien.Controls.Add(this.tabDSNV);
             this.tabNhanVien.Controls.Add(this.tabThemNV);
             this.tabNhanVien.Controls.Add(this.tabSuaNV);
+            this.tabNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabNhanVien.ItemSize = new System.Drawing.Size(136, 50);
-            this.tabNhanVien.Location = new System.Drawing.Point(6, 5);
+            this.tabNhanVien.Location = new System.Drawing.Point(0, 0);
             this.tabNhanVien.Name = "tabNhanVien";
             this.tabNhanVien.SelectedIndex = 0;
-            this.tabNhanVien.Size = new System.Drawing.Size(1140, 545);
+            this.tabNhanVien.Size = new System.Drawing.Size(1158, 553);
             this.tabNhanVien.TabIndex = 1;
             // 
             // tabDSNV
             // 
             this.tabDSNV.AutoScroll = true;
+            this.tabDSNV.Controls.Add(this.listViewNhanVien);
             this.tabDSNV.Controls.Add(this.btnSua);
             this.tabDSNV.Controls.Add(this.panel1);
             this.tabDSNV.Location = new System.Drawing.Point(4, 54);
             this.tabDSNV.Name = "tabDSNV";
-            this.tabDSNV.Size = new System.Drawing.Size(1132, 487);
+            this.tabDSNV.Size = new System.Drawing.Size(1150, 495);
             this.tabDSNV.TabIndex = 0;
             this.tabDSNV.Text = "Danh sách nhân viên";
             this.tabDSNV.UseVisualStyleBackColor = true;
             // 
+            // listViewNhanVien
+            // 
+            this.listViewNhanVien.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ID,
+            this.HoVaTen,
+            this.GioiTinh,
+            this.SDT,
+            this.DiaChi,
+            this.ChucVu,
+            this.TrangThai});
+            this.listViewNhanVien.HideSelection = false;
+            this.listViewNhanVien.Location = new System.Drawing.Point(27, 295);
+            this.listViewNhanVien.Name = "listViewNhanVien";
+            this.listViewNhanVien.Size = new System.Drawing.Size(647, 192);
+            this.listViewNhanVien.TabIndex = 4;
+            this.listViewNhanVien.UseCompatibleStateImageBehavior = false;
+            this.listViewNhanVien.View = System.Windows.Forms.View.Details;
+            // 
+            // ID
+            // 
+            this.ID.Text = "ID";
+            // 
+            // HoVaTen
+            // 
+            this.HoVaTen.Text = "Họ và tên";
+            this.HoVaTen.Width = 121;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DisplayIndex = 4;
+            this.GioiTinh.Text = "Giới tính";
+            // 
+            // SDT
+            // 
+            this.SDT.Text = "Số điện thoại";
+            this.SDT.Width = 111;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DisplayIndex = 2;
+            this.DiaChi.Text = "Địa chỉ";
+            this.DiaChi.Width = 90;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.Text = "Chức vụ";
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.Text = "Trạng Thái";
+            // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(665, 34);
+            this.btnSua.Location = new System.Drawing.Point(566, 49);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(80, 38);
             this.btnSua.TabIndex = 3;
@@ -96,7 +157,7 @@
             this.panel1.Controls.Add(this.lable2);
             this.panel1.Controls.Add(this.lable1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(253, 34);
+            this.panel1.Location = new System.Drawing.Point(137, 49);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(389, 209);
             this.panel1.TabIndex = 2;
@@ -186,7 +247,7 @@
             this.tabThemNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabThemNV.Location = new System.Drawing.Point(4, 54);
             this.tabThemNV.Name = "tabThemNV";
-            this.tabThemNV.Size = new System.Drawing.Size(1132, 487);
+            this.tabThemNV.Size = new System.Drawing.Size(1150, 495);
             this.tabThemNV.TabIndex = 0;
             this.tabThemNV.Text = "Thêm nhân viên";
             this.tabThemNV.UseVisualStyleBackColor = true;
@@ -196,7 +257,7 @@
             this.tabSuaNV.Location = new System.Drawing.Point(4, 54);
             this.tabSuaNV.Name = "tabSuaNV";
             this.tabSuaNV.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSuaNV.Size = new System.Drawing.Size(1132, 487);
+            this.tabSuaNV.Size = new System.Drawing.Size(1150, 495);
             this.tabSuaNV.TabIndex = 1;
             this.tabSuaNV.Text = "Sửa nhân viên";
             this.tabSuaNV.UseVisualStyleBackColor = true;
@@ -207,6 +268,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 553);
             this.Controls.Add(this.tabNhanVien);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NhanVien";
             this.Text = "Nhân viên";
             this.Load += new System.EventHandler(this.NhanVien_Load);
@@ -233,5 +295,14 @@
         private System.Windows.Forms.Label lable7;
         private System.Windows.Forms.Label lable6;
         private System.Windows.Forms.Label lable5;
-        private System.Windows.Forms.TabPage tabSuaNV;}
+        private System.Windows.Forms.TabPage tabSuaNV;
+        private System.Windows.Forms.ListView listViewNhanVien;
+        private System.Windows.Forms.ColumnHeader ID;
+        private System.Windows.Forms.ColumnHeader HoVaTen;
+        private System.Windows.Forms.ColumnHeader GioiTinh;
+        private System.Windows.Forms.ColumnHeader SDT;
+        private System.Windows.Forms.ColumnHeader DiaChi;
+        private System.Windows.Forms.ColumnHeader ChucVu;
+        private System.Windows.Forms.ColumnHeader TrangThai;
+    }
 }

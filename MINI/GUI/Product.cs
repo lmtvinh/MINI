@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MINI.GUI
 {
-    public partial class tabSanPham : Form
+    public partial class Product : UserControl
     {
-        public tabSanPham()
+        public Product()
         {
             InitializeComponent();
         }

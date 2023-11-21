@@ -16,7 +16,7 @@ namespace MINI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.NhanVien());
+            Application.Run(new GUI.trangChu());
         }
     }
 }
